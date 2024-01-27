@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Çalışan Değerlendirme Formu</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		form {
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			margin: 20px auto;
+			max-width: 600px;
+		}
+
+		fieldset {
+			border: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		legend {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		select {
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			padding: 5px;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+
+		select {
+			height: 35px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 10px;
+			width: 100%;
+			margin-top: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<fieldset>
+			<legend>Çalışan Değerlendirme Formu</legend>
+			<label for="isim">İsim:</label>
+			<input type="text" name="isim" id="isim" required>
+
+			<label for="soyisim">Soyisim:</label>
+			<input type="text" name="soyisim" id="soyisim" required>
+
+			<label for="departman">Departman:</label>
+			<select name="departman" id="departman" required>
+				<option value="">-- Seçiniz --</option>
+				<option value="IT">IT</option>
+				<option value="Muhasebe">Muhasebe</option>
+				<option value="Pazarlama">Pazarlama</option>
+				<option value="İnsan Kaynakları">İnsan Kaynakları</option>
+			</select>
+
+			<label for="yönetici">Yönetici:</label>
+			<input type="text" name="yönetici" id="yönetici" required>
+
+			<label for="performans">Performans Değerlendirmesi:</label>
+
+            
